@@ -1,4 +1,4 @@
-import React, { Component} from  'react';
+import React from  'react';
 import ReactDOM from 'react-dom';
 import Aplicacao from './aplicacao';
 
@@ -84,5 +84,5 @@ class App4 extends Component{  //Estado e Ciclo de Vida
     }
 }
 */
-const rootElement = document.getElementById("root")
-ReactDOM.render(<Aplicacao/>, rootElement)
+const rootElement = document.getElementById("root");
+ReactDOM.render(<Aplicacao/>, rootElement);

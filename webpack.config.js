@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack'); //to access built-in plugins
 
 module.exports = {
+    devtool: 'source-map', //mapeamento de arquivos
     mode: 'development',
     entry: './src/index.js',
     output: {
@@ -19,6 +20,9 @@ module.exports = {
                 }
             }
         ]
+    },
+    resolve: {
+        extensions: ['.js', '.jsx'], //arquivos aceitos
     },
     plugins: [
         new HtmlWebpackPlugin({
